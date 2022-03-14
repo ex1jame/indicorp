@@ -16,7 +16,7 @@ body {
 
 button {
     border: none;
-    background: inherit;
+    background: none;
 }
 
 a {
@@ -59,31 +59,16 @@ a {
     padding: 10px 36px;
     border-radius: 37px;
 }
-.burger_menu{
+
+.burger_menu {
     display: none;
 
 }
+
 .card_img svg {
     fill: #00A0C1;
 }
 
-.card_title {
-    margin: 10px 0;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: #252B42;
-}
-
-.card_desc {
-    width: 218px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
-}
 
 .text_center {
     text-align: center;
@@ -146,7 +131,6 @@ a {
 .hero {
     height: 100vh;
     background: url("../images/hero_bg.png") no-repeat center/cover;
-
 }
 
 .hero .container {
@@ -154,7 +138,7 @@ a {
     height: 100%;
 }
 
-.hero_title {
+.hero_header {
     width: 509px;
     font-weight: 800;
     font-size: 58px;
@@ -164,7 +148,7 @@ a {
     padding-top: 184px;
 }
 
-.hero_desc {
+.hero_subtitle {
     width: 376px;
     font-weight: 500;
     font-size: 20px;
@@ -172,6 +156,23 @@ a {
     letter-spacing: 0.2px;
     color: #737373;
     margin: 35px 0;
+}
+
+.hero_title {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.hero_desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
 }
 
 .hero_btn_orange {
@@ -218,7 +219,6 @@ a {
 }
 
 .hero_card {
-    width: 328px;
     height: 210px;
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
     background: #FFFFFF;
@@ -233,11 +233,11 @@ a {
     fill: #FFFFFF;
 }
 
-.hero_card:hover .card_title {
+.hero_card:hover .hero_title {
     color: #FFFFFF;
 }
 
-.hero_card:hover .card_desc {
+.hero_card:hover .hero_desc {
     color: #FFFFFF;
 }
 
@@ -255,11 +255,13 @@ a {
     padding-top: 90px;
 
 }
-.grid_card{
+
+.grid_card {
     background: #FFFFFF;
     padding-top: 40px;
     padding-bottom: 30px;
 }
+
 .grid_card_title {
     font-weight: 700;
     font-size: 40px;
@@ -279,19 +281,25 @@ a {
 
 /*Why choose us section*/
 /*Practice section*/
+.practice {
+    margin-bottom: 100px;
+}
+
 .practice_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
     margin-top: 45px;
 }
+
 .practice_card {
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.practice_header{
+
+.practice_header {
     padding: 30px 20px 30px 29px;
 }
 
@@ -313,10 +321,12 @@ a {
     letter-spacing: 0.2px;
     color: #737373;
 }
+
 .practice_img {
     width: 100%;
     height: 138px;
 }
+
 .practice_img img {
     width: 100%;
     height: 100%;
@@ -340,6 +350,14 @@ a {
     width: 511px;
 }
 
+.about_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 121px;
+    padding-top: 100px;
+    width: 100%;
+}
+
 .about-img {
     width: 597px;
     height: 442px;
@@ -347,8 +365,8 @@ a {
 }
 
 .about_title {
-    width: 328px;
-    font-weight: bold;
+    width: 100%;
+    font-weight: 700;
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
@@ -357,7 +375,7 @@ a {
 }
 
 .about_desc {
-    width: 330px;
+    width: 100%;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -366,13 +384,17 @@ a {
     padding: 10px 0 50px 0;
 }
 
-.row {
-    padding-top: 100px;
+.content_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_info svg {
+    margin-top: 20px;
 }
 
 .card_item_desc {
     width: 277px;
-    padding-left: 20px;
     margin-bottom: 30px;
 }
 
@@ -409,6 +431,11 @@ a {
 
 .clients_row svg {
     margin-right: 87px;
+
+}
+
+.clients_row svg {
+    transform-origin: 0px 0px;
 }
 
 .clients_card-item {
@@ -457,11 +484,12 @@ a {
 
 .card-item_button {
     width: 117px;
-    height: 58px;
+    height: 56px;
     background: #FFA62B;
     color: #FFFFFF;
     border: 1px solid #ffffff;
     margin-left: -8px;
+    border-radius: 0 5px 5px 0;
 }
 
 /*Clients section*/
@@ -505,7 +533,12 @@ a {
 }
 
 .contact_card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 333px;
+
 }
 
 .contact_card h5 {
@@ -515,7 +548,7 @@ a {
 .contact_card:hover {
     transition: 0.5s;
     background: #252B42;
-    height: 300px;
+
 }
 
 .contact_card:hover .contact_card_img svg {
